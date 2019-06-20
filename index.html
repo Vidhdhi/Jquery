@@ -1,0 +1,118 @@
+<html>
+<head> <title>Uki</title>
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <style>
+  .box4{
+  border-radius: 0px;
+  background: lightblue;
+
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  position:absolute;
+  margin-top:30%;
+
+  }
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: lightblue;
+    border: solid 1px #c3c3c3;
+  }
+
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+
+
+  </style>
+  <script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("ul").hide();
+  });
+  $("#show").click(function(){
+    $("ul").show();
+  });
+});
+$(document).ready(function(){
+  $("#hi").click(function(){
+    $("#hu").hide();
+  });});
+  $(document).ready(function(){
+  $("h2").hover(function(){
+    $(this).css("background-color", "lightblue");
+    }, function(){
+    $(this).css("background-color", "gray");
+  });
+});
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    alert("The Page Says You entered to Uki!");
+  });
+});
+</script>
+</head>
+<body>
+  <p ><a href="#">Home</a>
+  <a href="page.html">Form</a>
+  <a href="table.html">TimeTable</a></p>
+
+<center>  <img src="cropped-cropped-logo-copy-copy.png" alt="uki"></center>
+<br><br>
+<div id="flip">Welcome to Uki</div>
+ <div id="panel"><b>hey Uki</b></div>
+<center> <br> <br><div class="box" id="p1">
+<h1>Welcome to Uki-Stepping stone to tech life</h1>
+<p>Welcome to Uki : Stepping stone to tech life
+It is a full scholarship based Accelerator program for Coding in Jaffna, Sri Lanka targeting students who has completed Advanced Level examinations and don’t have access to university education or any other form of vocational education.
+ It is aimed to provide the necessary training to enter Computer Software industry or to start an IT startup.
+This is a joint initiative by Yarl IT Hub and SERVE Foundation.
+ Yarl IT Hub has been functioning for the last five years as a not for profit social enterprise focusing on technology entrepreneurship in northern Sri Lanka and SERVE Foundation is a four year old foundation focusing on using technology to uplift secondary education standards in rural schools in northern Sri Lanka.<p>
+</div>
+</center><br><br>
+
+
+<div class="box1">
+  <h2>COURSE</h2>
+  <p>
+    In Addition to Full Stack Development this course also includes career development curriculum such as
+<ul>
+<li>Basic Business Skills</li>
+<li>Spoken English and Communication Skills</li>
+<li>Personal Coaching</li>
+</ul>
+to get the students ready for job search plus job search assistance after graduation. Further guidance will be provided for those who want to venture in their own to become startup founders and co-founders.
+</p>
+<button id ="hide">Hide</button> <button id="show">Show </button>
+</div>
+
+<div class="box2">
+  <h2> CODING ACCELERATOR PROGRAM</h2>
+
+<p id ="hu">This Coding Accelerator program is an intensive training on full-stack development with server-side Node.js and modern, client-side, front-end libraries and frameworks.Throughout this intensive course the student will study professional software development techniques and practices as he/she advances his/her skills on JavaScript.</p>
+<button id ="hi">details</button>
+
+</details>
+</div>
+
+
+
+
+
+<footer class="box4">
+ 2017 © Uki All Rights Reserved.A joint initiative by YarlITHub and SERVE Foundation
+</footer>
+
+</body>
+
+<html>
